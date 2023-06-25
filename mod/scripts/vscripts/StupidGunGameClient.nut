@@ -34,6 +34,7 @@ array<ScoreboardColumnData> function Shared_GetCustomScoreboardColumns()
 void function Client_CustomScoreboardColumns_Init()
 {
     AddServerToClientStringCommandCallback( "AddCustomScoreboardColumn", ServerCallback_AddCustomScoreboardColumn )
+    printt("custom colums init")
 }
 
 void function ServerCallback_AddCustomScoreboardColumn( array<string> args )
