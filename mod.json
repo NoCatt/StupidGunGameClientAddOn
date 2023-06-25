@@ -8,7 +8,7 @@
    "ConVars": [],
    "Scripts": [{
       "Path": "StupidGunGameClient.nut",
-      "RunOn": "CLIENT && MP",
+      "RunOn": "(CLIENT||SERVER) && MP",
       "ClientCallback": {
          "Before":"Client_CustomScoreboardColumns_Init"
       }
