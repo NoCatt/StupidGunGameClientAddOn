@@ -1,16 +1,16 @@
 {
-   "Name": "Example.Mod",
-   "Description": "A cool mod that does cool stuff",
+   "Name": "Neinguar.StupidGunGameAddOn",
+   "Description": "A mod that only improved the SGG server and nothing else, yes this is literally a PR that never got merged",
    "Version": "1.0.0",
    "DownloadLink": "https://northstar.thunderstore.io/package/download/Example/Mod/",
 
    "LoadPriority": 0,
    "ConVars": [],
    "Scripts": [{
-      "Path": "example.nut",
-      "RunOn": "(CLIENT || SERVER) && MP",
+      "Path": "StupidGunGameClient.nut",
+      "RunOn": "CLIENT && MP",
       "ClientCallback": {
-         "Before":"example_callback"
+         "Before":"Client_CustomScoreboardColumns_Init"
       }
    }],
    "Localisation": []
